@@ -3,9 +3,12 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <cmath>
+
 
 #include "ErrorContext.h"
 #include "PointTests.h"
+#include "Point.h"
 
 using std::cout;
 using std::endl;

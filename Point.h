@@ -7,21 +7,28 @@
 class Point {
     
 private:
-    double x, y;
+    double x, y, z;
 
 public:
     // Constructors
     Point();                      // default constructor
-    Point(double x, double y);    // two-argument constructor
+    Point(double x1, double y1, double z1);    // three-argument constructor
 
     // Mutator methods
     void setX(double newX);
     void setY(double newY);
+    void setZ(double newZ);
 
     // Accessor methods
     double getX() const;
     double getY() const;
-    
+    double getZ() const;
+
+    //Function distanceTo return the distance between two points
+    double distanceTo(const Point &p1, const Point &p2) const;
+
+
+
 };
 
 #endif // __POINT_H
