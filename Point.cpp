@@ -57,22 +57,18 @@ double Point::getZ() const
 };
 
 //Function distanceTo return the distance between two points
-double Point::distanceTo(const Point &p1, const Point &p2) const
+double Point::distanceTo(const Point &p1) const
 {
-    double a1, b1, c1, a2, b2, c2;
+    double x1, y1, z1;
 
     //Get x,y,z of point 1
-    a1 = p1.getX();
-    b1 = p1.getY();
-    c1 = p1.getZ();
-
-    //Get x,y,z of pint 2
-    a2 = p2.getX();
-    b2 = p2.getY();
-    c2 = p2.getZ();
+    x1 = p1.getX();
+    y1 = p1.getY();
+    z1 = p1.getZ();
 
     double d; //d= distance from two points p1 and p2
-    d = sqrt(pow(a2 - a1, 2) + pow(b2 - b1, 2) + pow(c2 - c1, 2));
+    d = sqrt(pow(x - x1, 2) + pow(y - y1, 2) + pow(z - z1, 2));
 
     return d;
 }
+

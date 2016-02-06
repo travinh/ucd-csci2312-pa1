@@ -25,7 +25,7 @@ public:
     double getZ() const;
 
     //Function distanceTo return the distance between two points
-    double distanceTo(const Point &p1, const Point &p2) const;
+    double distanceTo(const Point &p1) const;
 
 
 
