@@ -3,7 +3,8 @@
 
 Decription of 3D points class
 ---------------------------
--Point.h: declare Point class: 
+-Point.h: declare Point class:
+
     + Private member include x,y,z (3 dimensions of a point)
     
     + Public member include:
